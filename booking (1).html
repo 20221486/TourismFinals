@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Webpage Title -->
+        <title>Booking</title>
+        <!-- External CSS -->
+        <link rel="stylesheet" href="css/booking.css">
+         <style>
+        .hotel-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .hotel-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .hotel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .hotel-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .hotel-card:hover {
+            transform: scale(1.03);
+        }
+
+        .hotel-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .hotel-info {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .hotel-info h3 {
+            margin-bottom: 8px;
+        }
+
+        .hotel-info p {
+            font-size: 14px;
+        }
+
+        .book-btn {
+            background: #1976D2;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .book-btn:hover {
+            background: #0d4a8a;
+        }
+    </style>
+    </head>
+   
+    <body>
+        <table id="navbar_margin">
+            <nav id="navbar">
+                <!-- Hamburger Menu -->
+                 <input type="checkbox" id="menu_toggle">
+                 <label for="menu_toggle" id="menu_icon">☰</label>
+
+                 <!-- Menu Locations -->
+                  <div id="navbar_hide">
+                    <ul id="navbar_content" style="list-style: none">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="destinations.html">DESTINATIONS</a></li>
+                        <li><a href="booking.html">BOOKING</a></li>
+                        <li><a href="about.html">TRAVEL TIPS</a></li>
+                    </ul>
+                  </div>
+            </nav>
+        </table>
+        <div id="contact_button_alignment"><button id="contact_button" onClick="location.href='contact.html'">📞</button></div>
+        <table id="global_header-table">
+            <tr>
+                <td id="global_header-text">
+                    <h1><span class="white-text">Book a</span> <span class="text-des1">Tour</span></h1>
+                </td>
+            </tr>
+        </table>
+
+        <!-- HOTEL RECOMMENDATION SECTION -->
+    <div class="hotel-section">
+        <h2>Book Your Hotel Here</h2>
+
+        <div class="hotel-grid">
+
+            <!-- CARD 1 -->
+            <div class="hotel-card">
+                <img src="images/Manor.jpeg" alt="The Manor">
+                <div class="hotel-info">
+                    <h3>The Manor at Camp JohnHay</h3>
+                    <p>Luxury hotel surrounded by pine trees with relaxing ambiance and elegant rooms.</p>
+                </div>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="hotel-card">
+                <img src="images/forest lodge.jpg" alt="The Forest Lodge">
+                <div class="hotel-info">
+                    <h3>The Forest Lodge</h3>
+                    <p>Affordable and cozy hotel inside CJH. Stylish rooms and peaceful surroundings.</p>
+                </div>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="hotel-card">
+                <img src="images/venuspark.jpeg" alt="Venus Parkview">
+                <div class="hotel-info">
+                    <h3>Venus Parkview Hotel</h3>
+                    <p>Located near Burnham Park. Best for families and first-time visitors.</p>
+                </div>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="hotel-card">
+                <img src="images/minesviewhotel.jpeg" alt="Venus Parkview">
+                <div class="hotel-info">
+                    <h3>Mines View Park hotel</h3>
+                    <p>a relaxed, family-friendly hotel offering panoramic mountain views.</p>
+                </div>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+              <!-- CARD 5 -->
+            <div class="hotel-card">
+                <img src="images/456 hotel.jpg" alt="Venus Parkview">
+                <div class="hotel-info">
+                    <h3>456 Hotel</h3>
+                    <p>456 Hotel in Baguio known for its convenient location near Burnham Park.</p>
+                </div>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="hotel-container">
+        <center><h2>Register your information here</h2></center>
+        <table id="table_style">
+            <tr>
+                <td>
+                    <form id="booking-form" action="#" method="post">
+                        <p>Full Name:</p><input type="text" id="full-name" name="full-name" placeholder="Enter Full Name" required><br><br>
+                        <p>Email Address:</p><input type="email" id="email" name="email" placeholder="Please Enter Email Address" required><br><br>
+                        <p>Contact Number:</p><input type="tel" id="phone" name="phone" placeholder="Tel no." required><br><br>
+                        <p>Preferred Destination:</p><input type="text" id="destination" name="destination" placeholder="Destination" required><br><br>
+                        <p>Preferred Date of Tour:</p><input type="date" id="tour-date" name="tour-date" required><br><br>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </form>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+
+</html>
