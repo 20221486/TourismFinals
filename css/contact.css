@@ -665,4 +665,37 @@
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
         filter: drop-shadow(0 0 1rem rgba(250, 162, 61, 0.74));
     }
+
+}
+
+/* ========================================= */
+/* Home CSS - Footer
+/* ========================================= */
+
+/* Mobile */
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+        color: white;
+    }
+
+    #footer_text {
+        color: white;
+    }
+}
+
+@media (min-width: 769px) {
+    footer {
+        text-align: center;
+        color: white;
+    }
+
+    #footer_text {
+        color: white;
+        font-size: small;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
 }
